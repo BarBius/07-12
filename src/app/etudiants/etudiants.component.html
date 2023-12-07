@@ -1,20 +1,8 @@
 <p>etudiants works!</p>
 <div>
     <h2>Liste des Étudiants</h2>
-    <table>
-    <thead>
-        <tr>
-        <th>Nom</th>
-        <th>Prénom</th>
-        <th>Classe</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let etudiant of etudiants">
-        <td>{{ etudiant.nom }}</td>
-        <td>{{ etudiant.prenom }}</td>
-        <td>{{ etudiant.classe }}</td>
-        </tr>
-    </tbody>
-    </table>
-</div>
+    <ul>
+      <li *ngFor="let etudiant of etudiants">
+        {{ etudiant.nom }} {{ etudiant.prenom }} - Classe: {{ etudiant.classe }}
+    </li>
+    </ul>
